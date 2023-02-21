@@ -1,0 +1,15 @@
+<input type="text" #passengerName>
+<button (click)="getPassengers(passengerName.value)">Find Passengers</button>
+
+<div *ngFor="let x of allPassengers">
+    <table>
+        <tr>
+            <td>{{x.prnNumber}}</td>
+            <td>{{x.passengerName}}</td>
+            <td>{{x.passengerAge}}</td>
+            <td>{{x.city}}</td>
+            <td>{{x.phoneNumber}}</td>
+            <td>{{x.email}}</td>
+        </tr>
+    </table>
+</div>
